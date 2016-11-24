@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="585.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane prefHeight="482.0" prefWidth="585.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Pomodoro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" layoutX="11.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" wrappingWidth="353.15997314453125">
+                           <font>
+                              <Font name="Ubuntu" size="80.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="481.0" layoutY="36.0" mnemonicParsing="false" text="New Task" />
+                        <TextField layoutX="9.0" layoutY="8.0" prefHeight="25.0" prefWidth="550.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Relatorio">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="364.0" prefWidth="482.0">
+                     <children>
+                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="360.0" prefWidth="368.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>
